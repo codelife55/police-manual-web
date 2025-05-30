@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คู่มือตำรวจ</title>
+  
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #f5f5f5;
+    }
+    
+    .book-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .book-container:hover {
+      transform: translateY(-10px);
+    }
+    
+    .book-cover {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .book-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .category-title {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .category-title:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: #b91c1c;
+      border-radius: 50%;
+    }
+    
+    .bookshelf {
+      background-color: #f9f3e8;
+      border: 1px solid #e5d9c3;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .shelf {
+      height: 15px;
+      background-color: #8b4513;
+      border-radius: 3px;
+      margin-top: 10px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-red-50">
+  <div class="container mx-auto px-4 py-8">
+    <div class="bg-red-800 text-white p-6 rounded-lg shadow-lg mb-8">
+      <h1 class="text-2xl font-bold text-center">คู่มือหรือมาตรฐานการปฏิบัติงาน (ของเจ้าหน้าที่ตำรวจ)</h1>
+    </div>
+    
+    <!-- คู่มือปฏิบัติงานอำนวยการ -->
+    <div class="bookshelf">
+      <h2 class="category-title text-xl font-bold text-red-800">คู่มือปฏิบัติงานอำนวยการ</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 mb-4">
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2023/05/01คู่มืองานธุรการ.pdf" target="_blank">
+            <div class="book-cover bg-red-700">
+              <img src="images/manual_director.jpg" alt="คู่มือ - งานอำนวยการ (เล่ม 1 งานธุรการและพัฒนากำลังพล)" class="w-full h-full object-cover">
+              <div class="book-title">1. คู่มือ - งานอำนวยการ (เล่ม 1 งานธุรการและพัฒนากำลังพล)</div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2022/06/คู่มือปฏิบัติงานด้าน-–-งานศูนย์ปฏิบัติการสถานีตำรวจ.pdf" target="_blank">
+            <div class="book-cover bg-red-700">
+              <img src="images/cover1.jpg" alt="คู่มือ - งานอำนวยการ (เล่ม 2 งานศูนย์ปฏิบัติการสถานีตำรวจ)" class="w-full h-full object-cover">
+              <div class="book-title">2. คู่มือ - งานอำนวยการ (เล่ม 2 งานศูนย์ปฏิบัติการสถานีตำรวจ)</div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2022/06/คู่มือปฏิบัติงานด้าน-–-งานกำลังพล.pdf" target="_blank">
+            <div class="book-cover bg-red-700">
+              <img src="images/cover2.jpg" alt="คู่มือ -งานอำนวยการ (เล่ม 3 งานกำลังพล)" class="w-full h-full object-cover">
+              <div class="book-title">3. คู่มือ -งานอำนวยการ (เล่ม 3 งานกำลังพล)</div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2022/06/คู่มือปฏิบัติงานด้าน-–-วินัย.pdf" target="_blank">
+            <div class="book-cover bg-red-700">
+              <img src="images/cover3.jpg" alt="คู่มือ - งานอำนวยการ (เล่ม 4 งานวินัย)" class="w-full h-full object-cover">
+              <div class="book-title">4. คู่มือ - งานอำนวยการ (เล่ม 4 งานวินัย)</div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2022/06/คู่มือปฏิบัติงานด้าน-–-งานสวัสดิการ.pdf" target="_blank">
+            <div class="book-cover bg-red-700">
+              <img src="images/cover4.jpg" alt="คู่มือ - งานอำนวยการ (เล่ม 5 งานสวัสดิการ)" class="w-full h-full object-cover">
+              <div class="book-title">5. คู่มือ - งานอำนวยการ (เล่ม 5 งานสวัสดิการ)</div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2022/06/คู่มือปฏิบัติงานด้าน-–-งานยุทธศาสตร์.pdf" target="_blank">
+            <div class="book-cover bg-red-700">
+              <img src="images/cover5.jpg" alt="คู่มือ - งานอำนวยการ (เล่ม 6 งานยุทธศาสตร์)" class="w-full h-full object-cover">
+              <div class="book-title">6. คู่มือ - งานอำนวยการ (เล่ม 6 งานยุทธศาสตร์)</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="shelf"></div>
+    </div>
+    
+    <!-- คู่มือปฏิบัติงานป้องกันปราบปราม -->
+    <div class="bookshelf">
+      <h2 class="category-title text-xl font-bold text-red-800">คู่มือปฏิบัติงานป้องกันปราบปราม</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 mb-4">
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2022/01/คู่มือการฝึกอบรมข้าราชการตำรวจงานป้องกันปราบปราม.pdf" target="_blank">
+            <div class="book-cover bg-blue-800">
+              <img src="images/cover1.jpg" alt="คู่มือ - การฝึกอบรมข้าราชการตำรวจงานป้องกันปราบปราม" class="w-full h-full object-cover">
+              <div class="book-title">1. คู่มือ - การฝึกอบรมข้าราชการตำรวจงานป้องกันปราบปราม</div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2023/05/คู่มือผู้ปฏิบัติสายงาน-ป.-ปรับปรุง-13-4-65.pdf" target="_blank">
+            <div class="book-cover bg-blue-800">
+              <img src="images/cover2.jpg" alt="คู่มือ - การปฏิบัติงานของเจ้าหน้าที่ตำรวจสายงานป้องกันปราบปราม 2564" class="w-full h-full object-cover">
+              <div class="book-title">2. คู่มือ - การปฏิบัติงานของเจ้าหน้าที่ตำรวจสายงานป้องกันปราบปราม 2564</div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2023/03/คู่มือการปฏิบัติงานด้านการป้องกันปราบปรามอาชญากรรม-ตร.-ปี-2562-เล่ม-1.pdf" target="_blank">
+            <div class="book-cover bg-blue-800">
+              <img src="images/cover3.jpg" alt="3. (เล่ม 1 ) การปฏิบัติงานด้านการป้องกันปราบปรามอาชญากรรม ตร. ประจำปี 2562 (NEW)" class="w-full h-full object-cover">
+              <div class="book-title">3. (เล่ม 1 ) การปฏิบัติงานด้านการป้องกันปราบปรามอาชญากรรม ตร. ประจำปี 2562 (NEW)</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="shelf"></div>
+    </div>
+    
+    <!-- คู่มือปฏิบัติงานจราจร -->
+    <div class="bookshelf">
+      <h2 class="category-title text-xl font-bold text-red-800">คู่มือปฏิบัติงานจราจร</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 mb-4">
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2022/01/คู่มือการฝึกอบรมข้าราชการตำรวจงานจราจร.pdf" target="_blank">
+            <div class="book-cover bg-green-700">
+              <img src="images/cover4.jpg" alt="คู่มือ - การฝึกอบรมข้าราชการตำรวจที่ปฏิบัติหน้าที่งานจราจรในสถานีตำรวจ" class="w-full h-full object-cover">
+              <div class="book-title">1. คู่มือ - การฝึกอบรมข้าราชการตำรวจที่ปฏิบัติหน้าที่งานจราจรในสถานีตำรวจ</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="shelf"></div>
+    </div>
+    
+    <!-- คู่มือปฏิบัติงานสอบสวน -->
+    <div class="bookshelf">
+      <h2 class="category-title text-xl font-bold text-red-800">คู่มือปฏิบัติงานสอบสวน</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 mb-4">
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2023/05/05คู่มือการปฏิบัติงานสอบสวน.pdf" target="_blank">
+            <div class="book-cover bg-yellow-700">
+              <img src="images/cover5.jpg" alt="คู่มือ - งานสอบสวน" class="w-full h-full object-cover">
+              <div class="book-title">1. คู่มือ - งานสอบสวน</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="shelf"></div>
+    </div>
+    
+    <!-- คู่มือปฏิบัติงานชุมชน -->
+    <div class="bookshelf">
+      <h2 class="category-title text-xl font-bold text-red-800">คู่มือปฏิบัติงานชุมชน</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 mb-4">
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2023/03/คู่มือสถานีตำรวจชุมชน.pdf" target="_blank">
+            <div class="book-cover bg-purple-700">
+              <img src="images/cover1.jpg" alt="คู่มือสถานีตำรวจชุมชน" class="w-full h-full object-cover">
+              <div class="book-title">1. คู่มือสถานีตำรวจชุมชน</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="shelf"></div>
+    </div>
+    
+    <!-- มาตรฐานการปฏิบัติงาน (Standard Operating Procedure: SOP) -->
+    <div class="bookshelf">
+      <h2 class="category-title text-xl font-bold text-red-800">มาตรฐานการปฏิบัติงาน (Standard Operating Procedure: SOP)</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 mb-4">
+        <div class="book-container">
+          <a href="https://taopoonpolice.go.th/wp-content/uploads/2025/04/Standard-Operating-Procedure-SOP.pdf" target="_blank">
+            <div class="book-cover bg-gray-700">
+              <img src="images/cover2.jpg" alt="Standard Operating Procedure (SOP)" class="w-full h-full object-cover">
+              <div class="book-title">Standard Operating Procedure (SOP)</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="shelf"></div>
+    </div>
+  </div>
+</body>
+</html>
